@@ -75,7 +75,7 @@ public class ReceiptPageController implements Initializable{
 		Alert alert = new Alert (Alert.AlertType.INFORMATION);
 		alert.setHeaderText(null);
 		alert.setTitle("Food Ordering System");
-		alert.setContentText("Your Order has been Received, Thank You!");
+		alert.setContentText("TU ORDEN A SIDO PROCESADO CORRECTAMENTE,");
 		alert.showAndWait();
 	}
 	

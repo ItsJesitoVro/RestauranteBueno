@@ -18,7 +18,7 @@ public void start (Stage primaryStage) throws IOException {
 	        
 	        Parent root = FXMLLoader.load(getClass().getResource("Receipt.fxml"));
 			Scene scene = new Scene(root);
-	        primaryStage.setTitle("Food Ordering System"); 
+	        primaryStage.setTitle("FACTURA"); 
 	        primaryStage.setScene(scene); 
 	        primaryStage.show(); 
 }

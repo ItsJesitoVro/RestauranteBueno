@@ -22,40 +22,54 @@
       <Button fx:id="AddDrink" layoutX="347.0" layoutY="375.0" mnemonicParsing="false" onAction="#newDrinkButtonPushed" text="AÑADIR" />
       <TableView fx:id="tableView1" layoutX="583.0" layoutY="50.0" prefHeight="219.0" prefWidth="326.0">
         <columns>
-          <TableColumn fx:id="OrderItemColumn1" prefWidth="242.0" text="PEDIDO DEL ARTÍCULO (HAMBURGUESA)" />
+          <TableColumn fx:id="OrderItemColumn1" prefWidth="242.0" text="PEDIDO DE ALIMENTOS" />
           <TableColumn fx:id="QuantityColumn1" prefWidth="83.0" text="QUANTITY" />
         </columns>
       </TableView>
       <Button fx:id="ProceedBtn" layoutX="823.0" layoutY="479.0" mnemonicParsing="false" onAction="#proceedBtn" prefHeight="25.0" prefWidth="86.0" text="PAGO&gt;" />
       <Separator layoutX="487.0" layoutY="-9.0" orientation="VERTICAL" prefHeight="611.0" prefWidth="6.0" />
       <Button fx:id="DeleteBtn" layoutX="714.0" layoutY="479.0" mnemonicParsing="false" onAction="#deleteButtonPushed" prefHeight="25.0" prefWidth="86.0" text="BORRAR" />
-      <RadioButton fx:id="CB" layoutX="41.0" layoutY="61.0" mnemonicParsing="false" selected="true" text="Hamburguesa de pollo">
+      <RadioButton fx:id="CB" layoutX="41.0" layoutY="60.0" mnemonicParsing="false" selected="true" text="Hamburguesa de pollo">
          <toggleGroup>
             <ToggleGroup fx:id="Burger" />
          </toggleGroup></RadioButton>
-      <RadioButton fx:id="BB" layoutX="41.0" layoutY="82.0" mnemonicParsing="false" text="Hamburguesa de carne" toggleGroup="$Burger" />
-      <RadioButton fx:id="DCB" layoutX="41.0" layoutY="106.0" mnemonicParsing="false" text="Hamburguesa doble de pollo" toggleGroup="$Burger" />
-      <RadioButton fx:id="DBB" layoutX="41.0" layoutY="131.0" mnemonicParsing="false" text="Hamburguesa doble de ternera" toggleGroup="$Burger" />
-      <RadioButton fx:id="BM" layoutX="41.0" layoutY="156.0" mnemonicParsing="false" text="Mezcla de hamburguesas (pollo + carne de res)" toggleGroup="$Burger" />
-      <RadioButton fx:id="coke" layoutX="49.0" layoutY="308.0" mnemonicParsing="false" selected="true" text="Coca">
+      <RadioButton fx:id="CC" layoutX="41.0" layoutY="80.0" mnemonicParsing="false" text="Caldo de camaron" toggleGroup="$Burger" />
+      <RadioButton fx:id="ENC" layoutX="41.0" layoutY="100.0" mnemonicParsing="false" text="Enchiladas" toggleGroup="$Burger" />
+      <RadioButton fx:id="CH" layoutX="41.0" layoutY="120.0" mnemonicParsing="false" text="Chilaquieles" toggleGroup="$Burger" />
+      <RadioButton fx:id="PE" layoutX="41.0" layoutY="140.0" mnemonicParsing="false" text="Pechuga empanizada" toggleGroup="$Burger" />
+      <RadioButton fx:id="TC" layoutX="41.0" layoutY="160.0" mnemonicParsing="false" text="Tostadas de camaron" toggleGroup="$Burger" />
+      <RadioButton fx:id="ARR" layoutX="41.0" layoutY="180.0" mnemonicParsing="false" text="Arroz" toggleGroup="$Burger" />
+       <RadioButton fx:id="SF" layoutX="41.0" layoutY="200.0" mnemonicParsing="false" text="Sopa fria" toggleGroup="$Burger" />
+       <RadioButton fx:id="SA" layoutX="41.0" layoutY="220.0" mnemonicParsing="false" text="Sopa aguada" toggleGroup="$Burger" />
+      
+      
+      
+      
+      
+      <RadioButton fx:id="coke" layoutX="49.0" layoutY="300.0" mnemonicParsing="false" selected="true" text="Coca Cola">
          <toggleGroup>
             <ToggleGroup fx:id="Drink" />
          </toggleGroup></RadioButton>
-      <RadioButton fx:id="fruit_punch" layoutX="49.0" layoutY="329.0" mnemonicParsing="false" text="Ponche de frutas" toggleGroup="$Drink" />
-      <RadioButton fx:id="mojitos" layoutX="49.0" layoutY="353.0" mnemonicParsing="false" text="Mojitos" toggleGroup="$Drink" />
-      <RadioButton fx:id="lemonade" layoutX="49.0" layoutY="379.0" mnemonicParsing="false" text="Lemonade" toggleGroup="$Drink" />
+      <RadioButton fx:id="C_M" layoutX="49.0" layoutY="320.0" mnemonicParsing="false" text="Cerveza modelo" toggleGroup="$Drink" />
+      <RadioButton fx:id="C_C" layoutX="49.0" layoutY="340.0" mnemonicParsing="false" text="Cerveza Corona" toggleGroup="$Drink" />
+      <RadioButton fx:id="lemonade" layoutX="49.0" layoutY="360.0" mnemonicParsing="false" text="Agua de limon" toggleGroup="$Drink" />
       <TextField fx:id="quantityBurger" layoutX="347.0" layoutY="94.0" prefHeight="25.0" prefWidth="41.0" text="1" />
       <TextField fx:id="quantityDrink" layoutX="347.0" layoutY="341.0" prefHeight="25.0" prefWidth="41.0" text="1" />
       <Label fx:id="quantityLabel1" layoutX="345.0" layoutY="74.0" text="Cantidad" />
       <Label fx:id="quantityLabel2" layoutX="345.0" layoutY="317.0" text="Cantidad" />
-      <RadioButton fx:id="ice_tea" layoutX="49.0" layoutY="400.0" mnemonicParsing="false" text="Té helado" toggleGroup="$Drink" />
+      <RadioButton fx:id="A_O" layoutX="49.0" layoutY="380.0" mnemonicParsing="false" text="Agua de orchata" toggleGroup="$Drink" />
+      <RadioButton fx:id="A_S" layoutX="49.0" layoutY="400.0" mnemonicParsing="false" text="Agua de sandia" toggleGroup="$Drink" />
+      <RadioButton fx:id="ice" layoutX="49.0" layoutY="420.0" mnemonicParsing="false" text="Helado de fresa" toggleGroup="$Drink" />
+      <RadioButton fx:id="PS" layoutX="49.0" layoutY="440.0" mnemonicParsing="false" text="Pastel de chocola " toggleGroup="$Drink" />
+      <RadioButton fx:id="PAY" layoutX="49.0" layoutY="460.0" mnemonicParsing="false" text="Pay de limon" toggleGroup="$Drink" />
+      <RadioButton fx:id="GL" layoutX="49.0" layoutY="480.0" mnemonicParsing="false" text="Gelatina de uva" toggleGroup="$Drink" />
       <TableView fx:id="tableView2" layoutX="583.0" layoutY="283.0" prefHeight="184.0" prefWidth="326.0">
          <columns>
-            <TableColumn fx:id="OrderItemColumn2" prefWidth="242.0" text="PEDIDO DEL ARTÍCULO (BEBIDA)" />
+            <TableColumn fx:id="OrderItemColumn2" prefWidth="242.0" text="PEDIDO DE BEBIDAS" />
             <TableColumn fx:id="QuantityColumn2" prefWidth="83.0" text="QUANTITY" />
          </columns>
       </TableView>
-      <Label fx:id="quantityLabel11" layoutX="166.0" layoutY="22.0" prefHeight="27.0" prefWidth="273.0" text="TUSOLUTIONWEB TUTOS" textFill="#d70909">
+      <Label fx:id="quantityLabel11" layoutX="166.0" layoutY="22.0" prefHeight="27.0" prefWidth="273.0" text="Menu Restaurante" textFill="#d70909">
          <font>
             <Font size="18.0" />
          </font>

@@ -2,7 +2,6 @@ package Project;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -13,6 +12,9 @@ import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 public class Welcome extends Application {
+    
+    
+
   
   Image image = new Image("file:background.jpg");
   
@@ -30,11 +32,11 @@ public class Welcome extends Application {
     iv.setImage(image);
     pane.getChildren().add(iv);
    
-    Button btOrder = new Button("Order");
+    Button btOrder = new Button("PEDIDO");
     btOrder.setPrefHeight(50);
     btOrder.setPrefWidth(100);
     
-    Button btExit = new Button(" Exit ");
+    Button btExit = new Button(" SALIR ");
     btExit.setPrefHeight(50);
     btExit.setPrefWidth(100);
 
@@ -48,20 +50,14 @@ public class Welcome extends Application {
     primaryStage.setScene(scene); 
     primaryStage.show(); 
  
-    btOrder.setOnAction(new EventHandler<ActionEvent>() {
-	@Override 
-	public void handle(ActionEvent event) {
-		PopupMsg Popup = new PopupMsg();
-		Popup.start(primaryStage);
-	  }
-	  });
+    btOrder.setOnAction((ActionEvent event) -> {
+        PopupMsg Popup = new PopupMsg();
+        Popup.start(primaryStage);
+    });
 
-   btExit.setOnAction(new EventHandler<ActionEvent>() {
-   @Override 
-   public void handle(ActionEvent event) {
-	  	System.exit(0);
-	  }
-	  });
+   btExit.setOnAction((ActionEvent event) -> {
+       System.exit(0);
+    });
 } 
 }
 

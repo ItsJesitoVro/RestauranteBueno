@@ -22,8 +22,8 @@ public class PopupMsg extends Application {
   HBox pane = new HBox(20); 
   pane.setAlignment(Pos.CENTER);
 	  
-  Button dineIn = new Button("Dine In");
-  Button takeAway = new Button("  Take Away\n(extra +RM2)");
+  Button dineIn = new Button("Efectivo");
+  Button takeAway = new Button("TARJETA\n($+iva)");
   dineIn.setPrefHeight(75);
   dineIn.setPrefWidth(125);
   takeAway.setPrefHeight(75);
@@ -33,7 +33,7 @@ public class PopupMsg extends Application {
   Scene scene = new Scene(pane, 300, 150);
   primaryStage.setX(800);
   primaryStage.setY(450);
-  primaryStage.setTitle("Food Ordering System "); 
+  primaryStage.setTitle("Medio de pago "); 
   primaryStage.setScene(scene); 
   primaryStage.show();
   
