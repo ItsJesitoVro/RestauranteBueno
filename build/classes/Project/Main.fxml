@@ -12,7 +12,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="fondo" stylesheets="@Estilo.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.MainPageController">
+
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.MainPageController">
  
     <children>
       <VBox layoutX="30.0" layoutY="31.0" prefHeight="225.0" prefWidth="194.0" />
@@ -78,3 +80,4 @@
       </Label>
    </children>
 </AnchorPane>
+
